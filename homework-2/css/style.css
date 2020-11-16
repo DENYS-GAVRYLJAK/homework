@@ -1,0 +1,99 @@
+
+/* --- index --- */
+
+.container {
+  background-color: brown ;
+}
+
+.container > a {
+  background-color: coral;
+  margin: 10px 20px;
+}
+
+.container > a:not(:last-child){
+ border-right: 1px solid black;
+}
+
+/* --- index2 --- */
+
+li {
+
+list-style: none;
+
+}
+
+ul>li>a {
+display: block;
+text-decoration: none;
+color: #444;
+}
+
+ul>li>a:hover  {
+
+  text-decoration: underline;
+  color: #999;
+
+}
+
+
+ul>li:first-child {
+
+font-weight: bold;
+font-size: 30px;
+
+}
+
+ul>li:last-child {
+
+  border-bottom: 1px solid #000 ;
+  
+  }
+
+ul>li:first-child::before {
+
+  content:"";
+  display: block;
+  height: 1px;
+ 
+  background-color: black;
+  }
+
+  /* ---- index4 --- */
+
+  .image-float {
+    float: left;
+  }
+
+  /* --- index5 --- */
+
+  table {border: 1px solid black;} 
+/* границы ячеек первого ряда таблицы */
+th {border: 1px solid black;}
+/* границы ячеек тела таблицы */
+td {border: 1px solid black;}
+
+/* сделает ширину таблицы равной ширине блока контейнера, в котором она находится */
+table {width: 100%;}
+/* задаст фиксированную ширину для таблицы */
+table {width: 600px;}
+
+table {border-collapse: collapse;}
+/* убираем промежутки между ячейками таблицы */
+
+th {
+  background-color: grey;
+  color: white;
+}
+
+tr:nth-child(2n) {
+  background-color: whitesmoke;
+}
+
+td:nth-child(3),td:nth-child(4) {
+
+  text-align: center;
+}
+
+td:nth-child(5) {
+  text-align: right;
+}
